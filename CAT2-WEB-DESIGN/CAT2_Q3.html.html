@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: whitesmoke;
+            }
+            .form-container {
+                background-color: rgb(16, 187, 255);
+                padding: 20px;
+                border: 2px solid black;
+                border-radius: 15px; /* Curved edges for form container */
+                width: 300px;
+                text-align: center;
+            }
+            h2 {
+                margin-bottom: 20px;
+            }
+            .input-container {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+            /* Styles for icon placement */
+.icon {
+    padding: 10px;
+    background: rgb(30, 210, 255);
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 5px 0 0 5px; /* Curved left edges for icons */
+}
+
+/* Styles for input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0; /* Curved right edges for input fields */
+}
+
+/* Styles for register button */
+.register-button {
+    background-color: rgb(34, 30, 255);
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px; /* Curved edges for button */
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+        </style>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <body>
+        <form>
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input type="text" placeholder="Name" name="name" required>
+            </div>
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="input-container">
+                <i class="fa fa-phone icon"></i>
+                <input type="tel" placeholder="Phone" name="phone" required>
+            </div>
+            <div class="input-container">
+                <i class="fa fa-lock icon"></i>
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <button type="submit" class="register-button">REGISTER</button>
+        </form>
+    </div>
+</body>
